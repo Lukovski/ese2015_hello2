@@ -28,6 +28,10 @@ public class SampleServiceImpl implements SampleService {
     public SampleServiceImpl() {
     }
     
+    public User findUser(Long id) {
+    	return userDao.findOne(id);
+    }
+    
     
     @Transactional
     public SignupForm saveFrom(SignupForm signupForm) throws InvalidUserException{

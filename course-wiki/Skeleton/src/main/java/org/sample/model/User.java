@@ -18,7 +18,7 @@ public class User {
     private String lastName;
     private String email;
     
-    @OneToOne(cascade = {CascadeType.ALL})
+    @OneToOne(cascade = {CascadeType.REFRESH})
     private Team team;
     
     @OneToOne(cascade = {CascadeType.ALL})
